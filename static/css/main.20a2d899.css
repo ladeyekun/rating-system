@@ -1,0 +1,2 @@
+body{background-color:#363539}.container{margin-inline:auto;width:min(100% - 32px,960px)}.flex{display:flex;gap:10px}.centralize{display:grid;place-items:center}.stars{align-items:center;display:flex;justify-content:center;place-items:center}.rating{border:1px solid red;height:100vh}.star{cursor:pointer;font-size:60px;.clicked{color:#ff0}.default{color:grey}}
+/*# sourceMappingURL=main.20a2d899.css.map*/
