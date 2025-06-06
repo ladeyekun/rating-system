@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(54, 53, 57);
+}
+
+.container {
+  width: min(100% - 32px, 960px);
+  margin-inline: auto;
+}
+
+.flex{
+  display: flex;
+  gap: 10px;
+}
+
+.centralize {
+  display: grid;
+  place-items: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.rating {
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.star {
+  font-size: 60px;
+  cursor: pointer;
+
+  .clicked {
+    color: yellow;
+  }
+
+  .default {
+    color: grey;
+  }
+}
