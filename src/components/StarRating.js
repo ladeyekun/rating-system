@@ -3,7 +3,7 @@ import Star from './Star';
 
 function StarRating() {
   const [selectedRating, setSelectedRating] = useState(0);
-  const ratingInfo = ['Very Poor', 'Poor', 'Okay', 'Good', 'Very Good'];
+  const ratingInfo = ['Very Unlikely', 'Unlikely', 'Neutral', 'Likely', 'Very Likely'];
 
   return (
     <>
@@ -12,7 +12,7 @@ function StarRating() {
           <Star key={index} selected={index < selectedRating} onClick={() => setSelectedRating(index + 1)} />
         ))}
       </div>
-      <h2>{selectedRating > 0 ? ratingInfo[selectedRating - 1] : 'Choose Rating'}</h2>
+      <h2 className="flex flex-center">{selectedRating > 0 ? ratingInfo[selectedRating - 1] : 'Choose Rating'}</h2>
     </>
   );
 }

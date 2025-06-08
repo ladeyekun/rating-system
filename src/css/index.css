@@ -12,6 +12,10 @@ body {
   gap: 10px;
 }
 
+.flex-center {
+  justify-content: center;
+}
+
 .centralize {
   display: grid;
   place-items: center;
@@ -24,9 +28,13 @@ body {
   place-items: center;
 }
 
+.box{
+  h2{
+    color: rgb(36, 208, 10);
+  }
+}
 .rating {
   height: 100vh;
-  border: 1px solid red;
 }
 
 .star {
@@ -40,4 +48,42 @@ body {
   .default {
     color: grey;
   }
+}
+
+.btn {
+  padding: 15px;
+  background-color: rgb(88, 187, 88);
+  color: rgb(41, 41, 41);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight:600;
+}
+
+.dialog-btn{
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.dialog {  
+  position: fixed;
+  height: auto;
+  display: grid;
+  place-items: center;
+  background-color: rgb(107, 105, 105);
+  margin: auto;
+  width: 500px;
+  padding: 25px;
+  border-radius: 5px;
+  animation: 0.2s linear anim;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        translate: 0 -10px;
+    } to {
+        opacity: 1;
+        translate: 0 0;
+    }
 }
