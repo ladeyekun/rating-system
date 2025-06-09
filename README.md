@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Rating system with dialog
+
+This is a simple star rating system and dialog developed with React. The app has three functional components - StarRating, Star and Dialog.
+The `Star` component used the FaStar icon from the `react-icon`. The `StarRating` component dynamically used `.map()` to list 5 stars with each having its description. In this project, `useState` hook is used to toggle the dialog and select the ratings.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
